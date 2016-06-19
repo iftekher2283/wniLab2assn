@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Data Submission Form - Assignment 2</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="theme/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="theme/css/business-casual.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+    <style>
+        #dataLabel{
+            color: white;
+            font-size: 16px;
+        }
+        #dataField{
+            width: 300px;
+        }
+        #dataBox{
+            width: 300px;
+        }
+        #dataArea{
+            width: 300px;
+            height: 60px;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="brand">Individual's Data Submission Form</div>
+        <div class="address-bar">AR Tower, 24, Kamal Ataturk Avenue | Banani, Dhaka - 1213 | 01911781327, 01747667864</div>
+
+
+        <div class="container">
+            <form method="POST" action="submittedData.html" name="submissionForm" id="submissionForm">
+                <center>
+                    <table>
+                        <tr>
+                            <td class="intro-text text-center" style="color: white" colspan="3">Enter the following information</td>                    
+                        </tr>
+                        <tr>
+                            <td id="dataLabel">
+                                Name
+                            </td>
+                            <td id="dataLabel">
+                                :
+                            </td>
+                            <td>
+                                <input type="text" name="name" id="dataField" autofocus="autofocus"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="dataLabel">
+                                NID No
+                            </td>
+                            <td id="dataLabel">
+                                :
+                            </td>
+                            <td>
+                                <input type="text" name="nidNo" id="dataField"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="dataLabel">
+                                Address
+                            </td>
+                            <td id="dataLabel">
+                                :
+                            </td>
+                            <td>
+                                <textarea name="address" id="dataArea"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="dataLabel">
+                                Date of Birth
+                            </td>
+                            <td id="dataLabel"> 
+                                :
+                            </td>
+                            <td>
+                                <input type="date" name="dob" id="dataField"/>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="dataLabel">
+                                Department
+                            </td>
+                            <td id="dataLabel">
+                                :
+                            </td>
+                            <td>
+                                <select id="dataBox" name="dept">
+                                    <option value="" selected="selected"></option>
+                                    <option value="CSE">CSE</option>
+                                    <option value="EEE">EEE</option>
+                                    <option value="ETE">ETE</option>
+                                    <option value="Textile">Textile</option>
+                                    <option value="Architecture">Architecture</option>
+                                    <option value="Pharmacy">Pharmacy</option>
+                                    <option value="BBA">BBA</option>
+                                    <option value="LLB">LLB</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="dataLabel">
+                                CGPA
+                            </td>
+                            <td id="dataLabel">
+                                :
+                            </td>
+                            <td>
+                                <input type="number" name="cgpa" id="dataField" step="any" min="0" max="4"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="dataLabel">
+                                Description
+                            </td>
+                            <td id="dataLabel">
+                                :
+                            </td>
+                            <td>
+                                <textarea name="desc" id="dataArea"></textarea>
+                            </td>
+                        </tr>
+                        <tr style="height: 10px">
+
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                <input type="submit" name="submit" value="Submit" class="btn btn-default btn-lg"> 
+                            </td>
+                        </tr>
+                    </table>
+                </center>
+            </form>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p>Copyright &copy; Atoms 2016</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Script to Activate the Carousel -->
+        <script>
+        $('.carousel').carousel({
+            interval: 5000 //changes the speed
+        })
+        </script>
+    </body>
+</html>

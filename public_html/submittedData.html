@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<?php
+    $name = $_POST["name"];
+    $nidNo = $_POST["nidNo"];
+    $address = $_POST"address"];
+    $dob = $_POST["dob"];
+    $dept = $_POST["dept"];
+    $cgpa = $_POST["cgpa"];
+    $desc = $_POST["desc"];
+?>
+<html>
+    <head>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Data Submission Form - Assignment 2</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="theme/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="theme/css/business-casual.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+    <style>
+        #dataLabel{
+            color: white;
+            font-size: 16px;
+        }
+        #dataSet{
+            color: white;
+            font-size: 16px;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="brand">Individual's Submitted Data</div>
+        <div class="address-bar">AR Tower, 24, Kamal Ataturk Avenue | Banani, Dhaka - 1213 | 01911781327, 01747667864</div>
+
+    <!--    <%
+        name, nidNo, address, dob, dept, cgpa, desc
+        name = Request.Form("name")
+        nidNo = Request.Form("nidNo")
+        address = Request.Form("address")
+        dob = Request.Form("dob")
+        dept = Request.Form("dept)
+        cgpa = Request.Form("cgpa")
+        desc = Request.Form("desc")
+        %>
+        <script type="text/javascript>">
+          //  var name
+            //, nidNo, address, dob, dept, cgpa, desc
+          //  name = document.submissionForm.name.value;
+//            nidNo = document.getElementByName("nidNo")
+//            address = document.getElementByName("address")
+//            dob = document.getElementByName("dob")
+//            dept = document.getElementByName("dept")
+//            cgpa = document.getElementByName("cgpa")
+//            desc = document.getElementByName("desc")
+        </script> -->
+        <div class="container">
+            <center>
+            <table>
+                <tr>
+                    <td class="intro-text text-center" style="color: white" colspan="3">You entered the following information</td>                    
+                </tr>
+                <tr>
+                    <td id="dataLabel">
+                        Name
+                    </td>
+                    <td id="dataLabel">
+                        :
+                    </td>
+                    <td id="dataSet">
+<!--                        <%Response.Write(name)%>-->
+<!--                        <script type="text/javascript">
+                            var name = (index.html).submissionForm.name.value;
+                            document.write(name);
+                        </script>-->
+                        <?php echo $name; ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="dataLabel">
+                        NID No
+                    </td>
+                    <td id="dataLabel">
+                        :
+                    </td>
+                    <td id="dataSet">
+<!--                        <%Response.Write(nidNo)%>-->
+                        <?php echo $nidNo; ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="dataLabel">
+                        Address
+                    </td>
+                    <td id="dataLabel">
+                        :
+                    </td>
+                    <td id="dataSet">
+<!--                        <%Response.Write(address)%>-->
+                        <?php echo $address; ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="dataLabel">
+                        Date of Birth
+                    </td>
+                    <td id="dataLabel"> 
+                        :
+                    </td>
+                    <td id="dataSet">
+<!--                        <%Response.Write(dob)%>-->
+                        <?php echo $dob; ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="dataLabel">
+                        Department
+                    </td>
+                    <td id="dataLabel">
+                        :
+                    </td>
+                    <td id="dataSet">
+<!--                        <%Response.Write(dept)%>-->
+                        <?php echo $dept; ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="dataLabel">
+                        CGPA
+                    </td>
+                    <td id="dataLabel">
+                        :
+                    </td>
+                    <td id="dataSet">
+<!--                        <%Response.Write(cgpa)%>-->
+                        <?php echo $cgpa; ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="dataLabel">
+                        Description
+                    </td>
+                    <td id="dataLabel">
+                        :
+                    </td>
+                    <td id="dataSet">
+<!--                        <%Response.Write(desc)%>-->
+                        <?php echo $desc; ?>
+                    </td>
+                </tr>
+                <tr style="height: 10px">
+                    
+                </tr>
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        <a href="index.html"> <input type="Button" name="back" value="Back" class="btn btn-default btn-lg"/> </a>
+                    </td>
+                </tr>
+            </table>
+            </center>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p>Copyright &copy; Atoms 2016</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Script to Activate the Carousel -->
+        <script>
+        $('.carousel').carousel({
+            interval: 5000 //changes the speed
+        })
+        </script>
+    </body>
+</html>
